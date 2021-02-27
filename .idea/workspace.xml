@@ -12,7 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cec5f3e1-ac1d-4320-b707-63e4a5cbeec6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/stackController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/stackController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +183,9 @@
       <workItem from="1614260138497" duration="12667000" />
       <workItem from="1614287702036" duration="1313000" />
       <workItem from="1614341162406" duration="36923000" />
-      <workItem from="1614389211953" duration="2599000" />
+      <workItem from="1614389211953" duration="2717000" />
+      <workItem from="1614392287445" duration="590000" />
+      <workItem from="1614393499185" duration="75000" />
     </task>
     <servers />
   </component>
