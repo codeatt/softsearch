@@ -44,7 +44,6 @@
 {{--    Retorna produtos--}}
     @if(isset($arr_body))
         @foreach($arr_body->results as $lista)
-
             <div class="d-flex align-items-start">
                 <div class="col-3"><img src={{$lista->thumbnail}}></div>
                 <div class="col-6">
@@ -53,7 +52,6 @@
                 </div>
                 <div class="col-3"><a href="{{$lista->permalink}}" class="btn btn-primary" role="button">Ir a Web</a></div>
             </div>
-
         @endforeach
     @else
         <div><br> Nenhuma pesquisa realizada no mercado livre !</div>
