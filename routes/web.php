@@ -4,8 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\inputSearchController;
 use App\Http\Controllers\stackController;
 
-
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
