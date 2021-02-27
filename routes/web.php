@@ -64,7 +64,7 @@ Route::any('/teste', function() {
     // {"type":"User"...'
 });
 
-Route::any('/login', [stackController::class, 'show', 'categoryFetch']);
+Route::any('/search', [stackController::class, 'show', 'categoryFetch']);
 
 
 

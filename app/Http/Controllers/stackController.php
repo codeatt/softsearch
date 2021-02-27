@@ -31,7 +31,31 @@ class stackController extends Controller
             }
                 $result_array = Arr::prepend($result_array, $arr_body_categories->id);
 
-            return view('/login')
+//            https://api.mercadolibre.com/categories/MLB1051
+
+            $teste = array_filter($arr_body->results,function ($var){return($var->category_id == 'MLB1051');});
+
+//            if(isset($arr_body)){
+//                foreach($arr_body->results as $lista){
+//                    return $lista;
+//                }
+//            }else{
+//                return "<div><br> Nenhuma pesquisa realizada no mercado livre !</div>";
+//            }
+//
+//            $contains = Arr::pluck($array, 'developer.name');
+
+//            $array = ['product' => ['name' => 'Desk', 'price' => 100]];
+//            $contains = Arr::hasAny($array, 'product.name');
+
+//            if ($arr_body2->hasAny($search_category)) {
+//                $category_filter = $search_category;
+//                return view('/login')->with(compact('category_filter'));
+//                } else {
+//                $category_filter = ["Busca de filtro de categoria falhou"];
+//            }
+
+            return view('/search')
                 ->with(compact(
                     'value_search',
                     'arr_body',
@@ -44,13 +68,31 @@ class stackController extends Controller
                     ));
         }
         else {
-            return view('/login')
+            return view('/search')
                 ->with(compact('value_search','search_category'));
         }
     }
 }
 
-//Guia de rotas api
+//        Arquivados
+//        $res_category = Http::get('https://api.mercadolibre.com/sites/MLB/search?category='.$search_category);
+
+//        https://programmingpot.com/laravel/dependent-droop-down-in-laravel/
+//        https://developers.mercadolivre.com.br/pt_br/categorizacao-de-produtos#Campos-da-resposta
+//        https://api.mercadolibre.com/categories/MLB1051
+//        BUSCAR ITENS POR CATEGORIA
+//        https://developers.mercadolivre.com.br/pt_br/itens-e-buscas#Buscar-itens-por-categoria
+//        https://laravel.com/docs/8.x/blade
+//        https://laravel.com/docs/8.x/helpers#method-array-hasany
+
+//        https://laravel.com/docs/8.x/requests#determining-if-input-is-present
+
+//        De fato usei em 25/02/21
+//    https://developers.mercadolivre.com.br/pt_br/itens-e-buscas#Buscar-itens-por-categoria
+//    https://api.mercadolibre.com/sites/MLB/search?q=laptop&categoryVALUES=MLB1051
+//    https://laravel.com/docs/8.x/requests#determining-if-input-is-present
+
+
 //Realiza una b&uacute;squeda por texto de busqueda
 //    GET
 //    /sites/MLA/search?q=
@@ -74,7 +116,7 @@ class stackController extends Controller
 //    /sites/MLA/search?q=ipod&FilterID=FilterValue
 
 
-//Valor categoria ID API Mercado Livre
+
 //        https://api.mercadolibre.com/sites/MLB/search?q=laptop&FilterID=MLB5411
 //        {
 //            "id": "MLB1051",
@@ -88,3 +130,14 @@ class stackController extends Controller
 //            "id": "MLB1000",
 //    "name": "Eletrônicos, Áudio e Vídeo"
 //  },
+
+
+//The Arr::where method filters an array using the given closure:
+//
+//use Illuminate\Support\Arr;
+//
+//$array = [100, '200', 300, '400', 500];
+//
+//$filtered = Arr::where($array, function ($value, $key) {
+//    return is_string($value);
+//});

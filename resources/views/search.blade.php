@@ -12,7 +12,7 @@
 <div class="container-fluid my-8">
     <h1>Search</h1>
     <div class="row">
-        <form class="col-8 row" action="{{'login'}}"  method="post">
+        <form class="col-8 row" action="{{'search'}}"  method="post">
             <div class="dropdown col-4">
                 <button class="btn btn-primary" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <label>Categorias</label>
