@@ -40,7 +40,6 @@ class stackController extends Controller
                     'arr_body_categories',
                     'key',
                     'result_array',
-                    'teste'
                     ));
         }
         else {
