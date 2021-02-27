@@ -12,7 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cec5f3e1-ac1d-4320-b707-63e4a5cbeec6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/public/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +186,7 @@
       <workItem from="1614341162406" duration="36923000" />
       <workItem from="1614389211953" duration="2717000" />
       <workItem from="1614392287445" duration="590000" />
-      <workItem from="1614393499185" duration="1167000" />
+      <workItem from="1614393499185" duration="3229000" />
     </task>
     <servers />
   </component>
@@ -210,6 +211,22 @@
     </state>
     <state x="322" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680/-1080.0.1080.2520@0.0.1280.680" timestamp="1613844759843" />
     <state x="322" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1613860840833" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1614395196922">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1614395196922" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1614395196922">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1614395196922" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1614395196922">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1614395196922" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1614395196922">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1614395196922" />
     <state x="0" y="0" width="628" height="680" key="find.popup" timestamp="1614391627217">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
