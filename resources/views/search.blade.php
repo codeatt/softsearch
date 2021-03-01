@@ -45,7 +45,7 @@
     @if(isset($arr_body))
         @foreach($arr_body->results as $lista)
             <div class="d-flex align-items-start">
-                <div class="col-3"><img src={{$lista->thumbnail}}></div>
+                <div class="col-2"><img class="col-12" src={{$lista->thumbnail}}></div>
                 <div class="col-6">
                     <p class="col-12">{{$lista->title}}</p>
                     <p class="col-12">{{$lista->currency_id}}{{$lista->price}}</p>
