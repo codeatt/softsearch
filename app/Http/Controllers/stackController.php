@@ -8,7 +8,7 @@ use Illuminate\Support\Arr;
 
 class stackController extends Controller
 {
-    public function show(Request $request)
+    public function index(Request $request)
     {
         // O Request vai retornar os dados sempre em string //old request working below
         $value_search = $request->input('q',null);
