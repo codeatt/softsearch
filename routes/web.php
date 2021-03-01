@@ -15,15 +15,15 @@ use App\Http\Controllers\stackController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 Route::resource('/searchjs', inputSearchController::class)->only([
     'index', 'show'
 ]);
 
-Route::any('/search', [stackController::class, 'show', 'categoryFetch']);
+Route::any('/', [stackController::class, 'index', 'categoryFetch']);
 
 
 
