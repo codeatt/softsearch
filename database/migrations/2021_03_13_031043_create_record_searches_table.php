@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSearchstacksTable extends Migration
+class CreateRecordSearchesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class CreateSearchstacksTable extends Migration
      */
     public function up()
     {
-        Schema::create('searchstacks', function (Blueprint $table) {
+        Schema::create('record_searches', function (Blueprint $table) {
             $table->id();
+            $table->string('value_search');
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ class CreateSearchstacksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('searchstacks');
+        Schema::dropIfExists('record_searches');
     }
 }

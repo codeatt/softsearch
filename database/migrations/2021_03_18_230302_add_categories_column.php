@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSearchMlsTable extends Migration
+class AddCategoriesColumn extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,8 @@ class CreateSearchMlsTable extends Migration
      */
     public function up()
     {
-        Schema::create('search_mls', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::table('record_searches', function (Blueprint $table) {
+            $table->string('category')->after('value_search');
         });
     }
 
@@ -26,6 +25,8 @@ class CreateSearchMlsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('search_mls');
+        Schema::table('record_searches', function (Blueprint $table) {
+            //
+        });
     }
 }
